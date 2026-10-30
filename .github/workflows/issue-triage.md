@@ -13,7 +13,10 @@ permissions:
   issues: read
   copilot-requests: write
 
-engine: copilot
+engine:
+  id: copilot
+  model: gpt-6-luna
+  fallback-models: [gpt-5.6-luna, claude-haiku-4.5]
 
 safe-outputs:
   add-labels:
@@ -21,6 +24,10 @@ safe-outputs:
     max: 1
   add-comment:
     max: 1
+  threat-detection:
+    engine:
+      id: copilot
+      model: gpt-6-luna
 
 timeout-minutes: 10
 ---
