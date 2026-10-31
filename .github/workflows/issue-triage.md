@@ -15,8 +15,8 @@ permissions:
 
 engine:
   id: copilot
-  model: gpt-6-luna
-  fallback-models: [gpt-5.6-luna, claude-haiku-4.5]
+  model: auto
+  # auto: Copilot picks a model this plan allows
 
 safe-outputs:
   add-labels:
@@ -27,7 +27,7 @@ safe-outputs:
   threat-detection:
     engine:
       id: copilot
-      model: gpt-6-luna
+      model: auto
 
 timeout-minutes: 10
 ---
