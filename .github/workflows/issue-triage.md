@@ -11,7 +11,7 @@ on:
 permissions:
   contents: read
   issues: read
-  copilot-requests: write
+  # the COPILOT_GITHUB_TOKEN secret pays for the model (a personal repository)
 
 engine:
   id: copilot
