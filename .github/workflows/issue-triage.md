@@ -15,7 +15,7 @@ permissions:
 
 engine:
   id: copilot
-  model: auto
+  model: copilot/auto
   # auto: Copilot picks a model this plan allows
 
 safe-outputs:
@@ -27,7 +27,7 @@ safe-outputs:
   threat-detection:
     engine:
       id: copilot
-      model: auto
+      model: copilot/auto
 
 timeout-minutes: 10
 ---
